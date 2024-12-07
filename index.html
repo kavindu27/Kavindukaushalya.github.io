@@ -3,10 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>My Portfolio</title>
+    
 </head>
 <body>
     <h1>Kavindu Kaushalya Madhusanka</h1>
+    <header>
+        <h1>My Portfolio</h1>
+        <p>Welcome to my personal space on the web!</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>Hello! I’m Kavindu, a web developer passionate about creating intuitive and beautiful web applications.</p>
+    </section>
+    <section id="portfolio" class="portfolio">
+        <h2>My Work</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project Title</h3>
+                <p>Brief description of the project.</p>
+                <a href="#">View Project</a>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form action="#">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Kavindu. All Rights Reserved.</p>
+    </footer>
     
 </body>
 </html>

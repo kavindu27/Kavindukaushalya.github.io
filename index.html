@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Jaro:opsz@6..72&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <title>My Portfolio</title>
     
 </head>
@@ -20,28 +24,78 @@
     </nav>
     <section id="about" class="about">
         <h2>About Me</h2>
-        <p>Hello! I’m Kavindu, a web developer passionate about creating intuitive and beautiful web applications.</p>
+        <p>Hello! I'm Kavindu, an undergraduate software engineering student with a strong interest in technology and innovation.<br> I'm passionate about learning, teamwork, and tackling challenges in both technical and non-technical domains.<br> I enjoy finding creative solutions, collaborating with others, and continuously improving my skills.</p>
     </section>
     <section id="portfolio" class="portfolio">
         <h2>My Work</h2>
         <div class="project-container">
             <div class="project-card">
-                <img src="project1.jpg" alt="Project 1">
                 <h3>Project Title</h3>
                 <p>Brief description of the project.</p>
-                <a href="#">View Project</a>
+                <video width="320" height="240" controls>
+                    <source src="Assets/Rentme.mp4" type="video/mp4">
+                    <source src="Assets/Rentme.mp4" type="video/ogg">
+                    Your browser does not support the video tag.
+                  </video> 
+            </div>
+            <div class="project-container"> 
+                <div class="project-card">
+                    <h3>The Gallery Cafe</h3>
+                            <p>Brief description of the project.</p>
+                    <img src="Assets/WEB/Screenshot (153).png" style="width:100%">
+                </div>
+                <div class="project-card">
+                    <h3>Tech Fix Computer Shop</h3>
+                            <p>Brief description of the project.</p>
+                <img src="Assets/SOC/Screenshot 2024-09-27 164607.png" style="width:100%">   
+                </div>  
             </div>
             <!-- Add more projects as needed -->
         </div>
     </section>
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <form action="#">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit">Send</button>
-        </form>
+    <section id="download-cv">
+        <h2>Download My CV</h2>
+        <p>Looking to learn more about me? Click the button below to download my CV.</p>
+        <a href="Assets/CV/Professional CV Resume.pdf 2.pdf" class="btn btn-download" download="Kavindu_CV.pdf">
+            Download CV
+        </a>
+    </section>
+    
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Please fill out the form below or reach us at:</p>
+            
+            <div class="contact-details">
+                <p><strong>Email:</strong> kavindukaushalya60@gmail.com</p>
+                <p><strong>Phone:</strong> +94 704064251</p>
+                <p><strong>Address:</strong> </p>
+            </div>
+
+            <form class="contact-form" action="send_message.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            
+
+            <!-- Social Media Section -->
+            <div class="social-media">
+                <h3>Follow Us</h3>
+                <a href="https://www.instagram.com/kavinducrick?igsh=cm9pb25vNjF0NGll&utm_source=qr" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/kavindu-kaushalya-a29464308?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
     </section>
     <footer>
         <p>&copy; 2024 Kavindu. All Rights Reserved.</p>
